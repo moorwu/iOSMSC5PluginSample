@@ -102,6 +102,9 @@
         },
         "Statistic": {
             "description": "管理统计插件"
+        },
+        "Plugin1": {
+            "description": "EasyPlugin"
         }
     },
     "plus": {

@@ -12,6 +12,12 @@
             function pluginGetString() {
                 alert( plugin1.getString() );
             }
+            function pluginShow() {
+                 plugin1.show( "MSC5 Plugin with callback!", function( bt ) {
+                         alert( bt );
+                  } );
+            }
+        
 		</script>
 		<link rel="stylesheet" href="./css/common.css" type="text/css" charset="utf-8"/>
 	</head>
@@ -23,6 +29,7 @@
 		<div id="dcontent" class="dcontent">
 			<br/>
 			<div class="button" onclick="pluginGetString()">plugin1.getString()</div>
+            <div class="button" onclick="pluginShow()">plugin1.show()</div>
 			<br/>
 		</div>
 	</body>

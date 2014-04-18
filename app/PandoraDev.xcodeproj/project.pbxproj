@@ -57,6 +57,11 @@
 		17D5B848173753A00037D35A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D5B847173753A00037D35A /* AddressBook.framework */; };
 		17D5B84A173753C30037D35A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D5B849173753C30037D35A /* AddressBookUI.framework */; };
 		7DF1D8591900D88C00DA69B0 /* EasyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8581900D88C00DA69B0 /* EasyPlugin.m */; };
+		7DF1D87A1901042300DA69B0 /* NSDate+TEAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8701901042300DA69B0 /* NSDate+TEAExtensions.m */; };
+		7DF1D87B1901042300DA69B0 /* TEABarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8721901042300DA69B0 /* TEABarChart.m */; };
+		7DF1D87C1901042300DA69B0 /* TEAClockChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8751901042300DA69B0 /* TEAClockChart.m */; };
+		7DF1D87D1901042300DA69B0 /* TEAContributionGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8771901042300DA69B0 /* TEAContributionGraph.m */; };
+		7DF1D87E1901042300DA69B0 /* TEATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8791901042300DA69B0 /* TEATimeRange.m */; };
 		B2880506169D68E300EFEE6F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2880505169D68E300EFEE6F /* MessageUI.framework */; };
 		B2E94A36168A9F5300E86C65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E94A35168A9F5300E86C65 /* UIKit.framework */; };
 		B2E94A38168A9F5300E86C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E94A37168A9F5300E86C65 /* Foundation.framework */; };
@@ -192,6 +197,17 @@
 		17DB2ED1180900F3000CF561 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		7DF1D8571900D88C00DA69B0 /* EasyPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyPlugin.h; sourceTree = "<group>"; };
 		7DF1D8581900D88C00DA69B0 /* EasyPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyPlugin.m; sourceTree = "<group>"; };
+		7DF1D86F1901042300DA69B0 /* NSDate+TEAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TEAExtensions.h"; sourceTree = "<group>"; };
+		7DF1D8701901042300DA69B0 /* NSDate+TEAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TEAExtensions.m"; sourceTree = "<group>"; };
+		7DF1D8711901042300DA69B0 /* TEABarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEABarChart.h; sourceTree = "<group>"; };
+		7DF1D8721901042300DA69B0 /* TEABarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEABarChart.m; sourceTree = "<group>"; };
+		7DF1D8731901042300DA69B0 /* TEAChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAChart.h; sourceTree = "<group>"; };
+		7DF1D8741901042300DA69B0 /* TEAClockChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAClockChart.h; sourceTree = "<group>"; };
+		7DF1D8751901042300DA69B0 /* TEAClockChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAClockChart.m; sourceTree = "<group>"; };
+		7DF1D8761901042300DA69B0 /* TEAContributionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAContributionGraph.h; sourceTree = "<group>"; };
+		7DF1D8771901042300DA69B0 /* TEAContributionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAContributionGraph.m; sourceTree = "<group>"; };
+		7DF1D8781901042300DA69B0 /* TEATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEATimeRange.h; sourceTree = "<group>"; };
+		7DF1D8791901042300DA69B0 /* TEATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEATimeRange.m; sourceTree = "<group>"; };
 		B2880505169D68E300EFEE6F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B2E94A31168A9F5300E86C65 /* MSC_Pandora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSC_Pandora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E94A35168A9F5300E86C65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -387,6 +403,24 @@
 			name = MyPlugin;
 			sourceTree = "<group>";
 		};
+		7DF1D86E1901042300DA69B0 /* TEAChart */ = {
+			isa = PBXGroup;
+			children = (
+				7DF1D86F1901042300DA69B0 /* NSDate+TEAExtensions.h */,
+				7DF1D8701901042300DA69B0 /* NSDate+TEAExtensions.m */,
+				7DF1D8711901042300DA69B0 /* TEABarChart.h */,
+				7DF1D8721901042300DA69B0 /* TEABarChart.m */,
+				7DF1D8731901042300DA69B0 /* TEAChart.h */,
+				7DF1D8741901042300DA69B0 /* TEAClockChart.h */,
+				7DF1D8751901042300DA69B0 /* TEAClockChart.m */,
+				7DF1D8761901042300DA69B0 /* TEAContributionGraph.h */,
+				7DF1D8771901042300DA69B0 /* TEAContributionGraph.m */,
+				7DF1D8781901042300DA69B0 /* TEATimeRange.h */,
+				7DF1D8791901042300DA69B0 /* TEATimeRange.m */,
+			);
+			path = TEAChart;
+			sourceTree = "<group>";
+		};
 		B2E94A26168A9F5300E86C65 = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +483,7 @@
 		B2E94A3B168A9F5300E86C65 /* Pandora */ = {
 			isa = PBXGroup;
 			children = (
+				7DF1D86E1901042300DA69B0 /* TEAChart */,
 				7DF1D8561900D81C00DA69B0 /* MyPlugin */,
 				17BD92B618E5420D0048B028 /* inc */,
 				1738EBE318AB2AB9000D51FA /* PandoraApi.bundle */,
@@ -653,7 +688,12 @@
 				7DF1D8591900D88C00DA69B0 /* EasyPlugin.m in Sources */,
 				B2E94A42168A9F5300E86C65 /* main.m in Sources */,
 				B2E94A46168A9F5300E86C65 /* AppDelegate.m in Sources */,
+				7DF1D87C1901042300DA69B0 /* TEAClockChart.m in Sources */,
+				7DF1D87E1901042300DA69B0 /* TEATimeRange.m in Sources */,
 				B2E94A4F168A9F5300E86C65 /* ViewController.m in Sources */,
+				7DF1D87D1901042300DA69B0 /* TEAContributionGraph.m in Sources */,
+				7DF1D87A1901042300DA69B0 /* NSDate+TEAExtensions.m in Sources */,
+				7DF1D87B1901042300DA69B0 /* TEABarChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

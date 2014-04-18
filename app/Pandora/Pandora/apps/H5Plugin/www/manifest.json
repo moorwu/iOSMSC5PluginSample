@@ -105,6 +105,9 @@
         },
         "Plugin1": {
             "description": "EasyPlugin"
+        },
+        "uiplugin": {
+            "description": "UIPlugin"
         }
     },
     "plus": {

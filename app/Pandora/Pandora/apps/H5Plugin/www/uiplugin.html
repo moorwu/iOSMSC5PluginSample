@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>
+        <title>H5Plugin</title>
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./js/ui_plugin.js"></script>
+        <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+        <script type="text/javascript">
+            function pluginDraw() {
+                //alert('kaka');
+                //$('#btnchart').style.display='none';
+                //alert('miao');
+                var divEle=$('#chart');
+                var param={
+                    width:divEle.width()-10,
+                    height:divEle.height()-70,
+                    x:divEle.offset().left+5,
+                    y:divEle.offset().top+60
+                }
+                uiPlugin.drawPie(param);
+
+            }
+        </script>
+        <link rel="stylesheet" href="./css/common.css" type="text/css" charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <div class="nvbt" onclick="back();"><div class="iback"></div></div>
+            <div class="nvtt">UI Plugin</div>
+        </header>
+        <div id="dcontent" class="dcontent" style="clear:both;height:100%">
+            <div id="chart" style="width:100%;height:80%" >
+                <div id="btnchart" class="button" onclick="pluginDraw();"> Got Chart</div>
+            </div>
+             
+        </div>
+    </body>
+</html>

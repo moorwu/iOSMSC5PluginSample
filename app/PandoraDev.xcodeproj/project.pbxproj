@@ -56,6 +56,7 @@
 		17CF994B1714003D00DD1F7B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CF994A1714003C00DD1F7B /* CoreFoundation.framework */; };
 		17D5B848173753A00037D35A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D5B847173753A00037D35A /* AddressBook.framework */; };
 		17D5B84A173753C30037D35A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D5B849173753C30037D35A /* AddressBookUI.framework */; };
+		7DF1D8591900D88C00DA69B0 /* EasyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF1D8581900D88C00DA69B0 /* EasyPlugin.m */; };
 		B2880506169D68E300EFEE6F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2880505169D68E300EFEE6F /* MessageUI.framework */; };
 		B2E94A36168A9F5300E86C65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E94A35168A9F5300E86C65 /* UIKit.framework */; };
 		B2E94A38168A9F5300E86C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E94A37168A9F5300E86C65 /* Foundation.framework */; };
@@ -189,6 +190,8 @@
 		17DB2ECF180900F3000CF561 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hant"; path = "zh-Hant.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
 		17DB2ED0180900F3000CF561 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		17DB2ED1180900F3000CF561 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		7DF1D8571900D88C00DA69B0 /* EasyPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyPlugin.h; sourceTree = "<group>"; };
+		7DF1D8581900D88C00DA69B0 /* EasyPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyPlugin.m; sourceTree = "<group>"; };
 		B2880505169D68E300EFEE6F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B2E94A31168A9F5300E86C65 /* MSC_Pandora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSC_Pandora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E94A35168A9F5300E86C65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -375,6 +378,15 @@
 			path = tools;
 			sourceTree = "<group>";
 		};
+		7DF1D8561900D81C00DA69B0 /* MyPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				7DF1D8571900D88C00DA69B0 /* EasyPlugin.h */,
+				7DF1D8581900D88C00DA69B0 /* EasyPlugin.m */,
+			);
+			name = MyPlugin;
+			sourceTree = "<group>";
+		};
 		B2E94A26168A9F5300E86C65 = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +449,7 @@
 		B2E94A3B168A9F5300E86C65 /* Pandora */ = {
 			isa = PBXGroup;
 			children = (
+				7DF1D8561900D81C00DA69B0 /* MyPlugin */,
 				17BD92B618E5420D0048B028 /* inc */,
 				1738EBE318AB2AB9000D51FA /* PandoraApi.bundle */,
 				B2E94A3C168A9F5300E86C65 /* Supporting Files */,
@@ -637,6 +650,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF1D8591900D88C00DA69B0 /* EasyPlugin.m in Sources */,
 				B2E94A42168A9F5300E86C65 /* main.m in Sources */,
 				B2E94A46168A9F5300E86C65 /* AppDelegate.m in Sources */,
 				B2E94A4F168A9F5300E86C65 /* ViewController.m in Sources */,

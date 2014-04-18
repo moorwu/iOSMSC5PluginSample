@@ -1,0 +1,6 @@
+<msc version="V2.9.4.BUILD.04.100902.72988" debug="false">
+	<!--应用节点-->
+	<apps>
+		<app appid='H5Plugin' appver='1.0.1'/>
+	</apps>
+</msc> 

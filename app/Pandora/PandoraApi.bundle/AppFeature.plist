@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Statistic</key>
+	<string>PGStatistic</string>
+	<key>Camera</key>
+	<string>PGCamera</string>
+	<key>Console</key>
+	<string>PGLog</string>
+	<key>Storage</key>
+	<string>PGNStorage</string>
+	<key>Gallery</key>
+	<string>PGGallery</string>
+	<key>Downloader</key>
+	<string>PGDownload</string>
+	<key>Messaging</key>
+	<string>PGMessaging</string>
+	<key>Uploader</key>
+	<string>PGUpload</string>
+	<key>Payment</key>
+	<dict>
+		<key>name</key>
+		<string>PGPayManager</string>
+		<key>imp</key>
+		<dict>
+			<key>alix</key>
+			<string>PGAlixPay</string>
+		</dict>
+	</dict>
+	<key>Speech</key>
+	<dict>
+		<key>name</key>
+		<string>PGSpeech</string>
+		<key>imp</key>
+		<dict>
+			<key>ifly</key>
+			<string>PGIFLYSpeech</string>
+		</dict>
+	</dict>
+	<key>Share</key>
+	<dict>
+		<key>name</key>
+		<string>PGShareManager</string>
+		<key>imp</key>
+		<dict>
+			<key>tencentweibo</key>
+			<string>PGQQShare</string>
+			<key>sinaweibo</key>
+			<string>PGSinaShare</string>
+			<key>weixin</key>
+			<string>PGWXShare</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

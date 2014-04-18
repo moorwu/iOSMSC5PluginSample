@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="misapplication-tap-highlight" content="no"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<title>H5Plugin</title>
+		<script type="text/javascript" charset="utf-8">
+//取消浏览器的所有事件，使得active的样式在手机上正常生效
+document.addEventListener( "touchstart", function(e) {
+    return false;
+}, true );
+// 禁止选择
+document.oncontextmenu = function(){
+	return false;
+};
+// H5 plus事件处理
+document.addEventListener( "plusready", function() {
+	plus.ui.getSelfWindow().addEventListener( "back", function(){
+	// Android处理返回键
+		if ( confirm("确认退出？") ) {
+			plus.runtime.quit();
+		}
+	}, false );
+	// iOS平台使用滚动的div
+	if ( "iOS" == plus.os.name ) {
+		document.getElementById("content").className = "scontent";
+	}
+	plus.ui.closeSplashscreen();
+}, false );
+// 处理点击事件
+function clicked( id ) {
+	if ( window.plus ) {
+		plus.ui.createWindow( id, {name:id} ).show( "slide-in-right", 300 );
+	} else {
+		window.open( id );
+	}
+}
+		</script>
+		<link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8"/>
+		<style type="text/css">
+li {
+	padding: 1em;
+	border-bottom: 1px solid #eaeaea;
+}
+li:active {
+	background: #f4f4f4;
+}
+.item {
+	display: block;
+	background: no-repeat right center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAsCAYAAAB/nHhDAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAKwwAACsMBNCkkqwAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8yOC8xMqLz6JEAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABJ0lEQVRYhe3Wv6rCMBQG8C/VN1AEd3HSzuYO3jr4knkY0UE62xTBcp9A8A0uHhc72CZp/lQQyZmT7xfSJKeMiPDOSt6aHoEIRKAbkLKioqiCrroWkLKi+51ARAhBlEAdXlcI0gLK8u8lPBRpAYvFjCUJUw72QZRbtFzOe0O0H7kvxHhM83yfhiJdF+2c5/utCTmdLnS93rQQs2mZQogN59lOdbrqmk7HmExGrZVYAU9kzXl2cEWsgSfys1r9Hk1TmogTAABFcTFOaQJOr6mUlVO4E9B8n2zCrQHfcAAYmoKFEAPOs39dOGMMaTpXX5J6jGlTTSu3CQcsGk5IuBboK1wJ6BqOT7gS0DUcn3AlALR7gW84YHGKiOAd3gn0UV/+6xiBCHwG8AByzMrOPKV7sAAAAABJRU5ErkJggg==);
+	background-size: auto 100%;
+	-ms-touch-action: auto;
+}
+		</style>
+	</head>
+	<body onselectstart="return false;">
+		<header>
+			<div style="width:15%;height:100%;float:left;"></div>
+			<div class="nvtt">HTML5+ Plugin</div>
+		</header>
+		<div id="content" class="content">
+		</div>
+	</body>
+</html>
